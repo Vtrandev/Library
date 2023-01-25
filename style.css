@@ -403,6 +403,7 @@ FOOTER
 
 .footer__logo {
     display: flex;
+    margin-top: 24px;
 }
 
 .footer__logo--img {
