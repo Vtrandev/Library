@@ -14,7 +14,6 @@ async function renderBooks(filter) {
 
   booksWrapper.classList.remove('books__loading')
 
-
   if (filter === 'LOW_TO_HIGH') {
     books.sort((a, b) => (a.salePrice || a.originalPrice) - (b.salePrice || b.originalPrice))      
     // It takes the 1st one if it exists, if not, then 2nd one.
@@ -56,7 +55,7 @@ function priceHTML(originalPrice, salePrice) {
   return `<span class="book__price--normal">$${originalPrice.toFixed(2)}</span> $${salePrice.toFixed(2)}`
 }
 
-// Price function
+// rating function
 
 
 function ratingHTML(rating) {
